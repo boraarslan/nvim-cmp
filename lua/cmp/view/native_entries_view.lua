@@ -127,7 +127,7 @@ end
 
 native_entries_view.select_next_item = function(self, option)
   local callback = function()
-    self.event:emit('change')
+    -- self.event:emit('change')
   end
   if self:visible() then
     if (option.behavior or types.cmp.SelectBehavior.Insert) == types.cmp.SelectBehavior.Insert then
@@ -140,7 +140,7 @@ end
 
 native_entries_view.select_prev_item = function(self, option)
   local callback = function()
-    self.event:emit('change')
+    -- self.event:emit('change')
   end
   if self:visible() then
     if (option.behavior or types.cmp.SelectBehavior.Insert) == types.cmp.SelectBehavior.Insert then
